@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Wait List</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="login">Login</string>
+    <string name="loginError">Incorrect Username or Password</string>
+    <string name="mainPage">Main Page</string>
+    <string name="admin">Admin</string>
+    <string name="waitingList">Waiting List</string>
+    <string name="signout">Sign Out</string>
+    <string name="setupEvent">Setup Event</string>
+    <string name="eventList">Event List</string>
+    <string name="push">Push To Server</string>
+    <string name="eventId">Event Id</string>
+    <string name="eventName">Event Name</string>
+    <string name="eventLocation">Event Location</string>
+    <string name="eventStartDate">Start Date</string>
+    <string name="eventEndDate">End Date</string>
+    <string name="eventDates">Event Dates</string>
+    <string name="eventAdded">Event Created!!</string>
+    <string name="eventNotAdded">Event Could Not Be Created!!</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="status">Status</string>
+    <string name="addUser">Add User</string>
+    <string name="chooseEvent">Choose Event</string>
+    <string name="mandatoryField">Mandatory Field</string>
+    <string name="emailError">Not an Email Id</string>
+    <string name="phoneError">Not a Phone Number</string>
+    <string name="invalidDate">Not a Valid Date</string>
+    <string name="event">Event</string>
+    <string name="dateError">Event end date is before the Event start date</string>
+</resources>

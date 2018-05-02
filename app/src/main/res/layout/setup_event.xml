@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/screen"
+    tools:context="com.nidhi.waitlist.SetupEvent">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+    <View
+        android:id="@id/seperator"
+        style="@style/Divider"
+        android:layout_below="@id/toolbar"></View>
+
+    <LinearLayout
+        android:id="@+id/innermost"
+        style="@style/userScreen"
+        android:layout_below="@id/seperator">
+        <TextView
+            android:id="@id/heading"
+            style="@style/heading"
+            android:text="@string/setupEvent"
+            />
+        <TableLayout
+            android:id="@id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@id/tvEventName"
+                    style="@style/AppTextViewStyle"
+                    android:text="@string/eventName"
+                    android:layout_column="1"
+                    />
+                <EditText
+                    android:id="@id/etEventName"
+                    style="@style/AppEditTextStyle"
+                    android:inputType="text"
+                    android:layout_column="2"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:id="@id/tvEventLocation"
+                style="@style/AppTextViewStyle"
+                android:text="@string/eventLocation"
+                android:layout_column="1"
+                />
+            <EditText
+                android:id="@id/etEventLocation"
+                style="@style/AppEditTextStyle"
+                android:inputType="text"
+                android:layout_column="2"
+                />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@id/tvEventStartDate"
+                    style="@style/AppTextViewStyle"
+                    android:text="@string/eventStartDate"
+
+                    android:layout_column="1"/>
+                <EditText
+                    android:id="@id/etEventStartDate"
+                    style="@style/AppEditTextStyle"
+                    android:focusable="false"
+                    android:layout_column="2"/>
+                </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@id/tvEventEndDate"
+                    style="@style/AppTextViewStyle"
+                    android:text="@string/eventEndDate"
+                    android:layout_column="1"/>
+                <EditText
+                    android:id="@id/etEventEndDate"
+                    style="@style/AppEditTextStyle"
+                    android:focusable="false"
+                    android:layout_column="2"/>
+                </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@id/btnSetupEvent"
+            style="@style/AppButtonStyle"
+            android:layout_centerInParent="true"
+            android:text="@string/setupEvent"
+            android:layout_gravity="center"
+            android:onClick="addEvent"/>
+    </LinearLayout>
+
+</RelativeLayout>

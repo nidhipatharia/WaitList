@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@id/tvEventId"
+        style="@style/ListViewRowStyle"
+        android:text="@string/eventId"
+        />
+    <TextView
+        android:id="@id/tvName"
+        style="@style/ListViewRowStyle"
+        android:layout_alignParentLeft="true"
+        android:text="@string/name"
+        />
+    <TextView
+        android:id="@id/tvEmail"
+        style="@style/ListViewRowStyle"
+        android:layout_alignParentLeft="true"
+        android:text="@string/email"
+        />
+    <TextView
+        android:id="@id/tvProcessed"
+        style="@style/ListViewRowStyle"
+        android:layout_alignParentRight="true"
+        android:text="@string/status" />
+</RelativeLayout>

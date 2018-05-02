@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@id/pustToServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone" />
+    <TextView
+        android:id="@id/tvEventId"
+        style="@style/ListViewRowStyle"
+        android:text="@string/eventId"
+        android:visibility="gone"
+        android:layout_toRightOf="@id/pustToServer"/>
+
+    <TextView
+        android:id="@id/tvEventName"
+        style="@style/ListViewRowStyle"
+        android:layout_toRightOf="@id/pustToServer"
+        android:layout_alignBaseline="@id/pustToServer"
+        android:text="@string/eventName"
+         />
+
+    <TextView
+        android:id="@id/tvEventLocation"
+        style="@style/ListViewRowStyle"
+        android:layout_toRightOf="@id/pustToServer"
+        android:layout_alignBaseline="@id/pustToServer"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@id/tvEventStartDate"
+        style="@style/ListViewRowStyle"
+        android:layout_toRightOf="@id/pustToServer"
+        android:layout_alignBaseline="@id/pustToServer"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@id/tvEventEndDate"
+        style="@style/ListViewRowStyle"
+        android:layout_toRightOf="@id/pustToServer"
+        android:layout_alignBaseline="@id/pustToServer"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@id/tvEventDates"
+        style="@style/ListViewRowStyle"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/pustToServer"
+        android:text="@string/eventDates" />
+</RelativeLayout>

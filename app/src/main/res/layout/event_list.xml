@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/screen"
+    tools:context="com.nidhi.waitlist.EventList">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+    <View
+        android:id="@id/seperator"
+        style="@style/Divider"
+        android:layout_below="@id/toolbar"></View>
+
+    <TextView
+        style="@style/heading"
+        android:layout_below="@id/seperator"
+        android:id="@id/tvEventList"
+        android:layout_centerHorizontal="true"
+        android:text="@string/eventList"/>
+
+    <ListView
+        android:layout_below="@id/tvEventList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/lvEventList"
+        >
+
+    </ListView>
+</RelativeLayout>

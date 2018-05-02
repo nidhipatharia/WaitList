@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/screen"
+    tools:context="com.nidhi.waitlist.WaitingList">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+    <View
+        android:id="@id/seperator"
+        style="@style/Divider"
+        android:layout_below="@id/toolbar"></View>
+
+    <TextView
+        style="@style/heading"
+        android:layout_below="@id/seperator"
+        android:id="@id/tvWaitingList"
+        android:layout_centerHorizontal="true"
+        android:text="@string/waitingList"/>
+
+    <Button
+        android:id="@id/btnAddUser"
+        style="@style/AppButtonStyleInLists"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvWaitingList"
+        android:text="@string/addUser"
+        android:onClick="addUser"/>
+
+
+
+    <ListView
+        android:layout_below="@id/btnAddUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/lvWaitingUserList"
+        >
+
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/event"
+       android:title="@string/event" >
+        <menu>
+        <item android:id="@id/chooseEvent"
+            android:title="@string/chooseEvent"/>
+
+        <item android:id="@id/waitingList"
+            android:title="@string/waitingList"/>
+
+        <item android:id="@id/addUser"
+            android:title="@string/addUser"/>
+        </menu>
+    </item>
+    <item android:id="@id/admin"
+      android:title="@string/admin" >
+        <menu>
+        <item android:id="@id/setupEvent"
+            android:title="@string/setupEvent"/>
+
+        <item android:id="@id/eventList"
+            android:title="@string/eventList"/>
+
+        <item android:id="@id/pustToServer"
+            android:title="@string/push"/>
+        </menu>
+    </item>
+</menu>

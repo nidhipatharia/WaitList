@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/screen"
+    tools:context="com.nidhi.waitlist.Login">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+    <View
+        android:id="@id/seperator"
+        style="@style/Divider"
+        android:layout_below="@id/toolbar"></View>
+
+    <LinearLayout
+        style="@style/userScreen">
+        <TextView
+            android:id="@id/heading"
+            style="@style/heading"
+            android:text="@string/admin"/>
+        <Button
+            android:id="@id/btnSetupEvent"
+            style="@style/AppButtonStyle"
+            android:text="@string/setupEvent"
+            android:onClick="setupEvent"/>
+        <Button
+            android:id="@id/btnEventList"
+            style="@style/AppButtonStyle"
+            android:text="@string/eventList"
+            android:onClick="eventList"/>
+        <Button
+            android:id="@id/btnPushToServer"
+            style="@style/AppButtonStyle"
+            android:text="@string/push"
+            android:onClick="pushToServer"/>
+    </LinearLayout>
+</RelativeLayout>

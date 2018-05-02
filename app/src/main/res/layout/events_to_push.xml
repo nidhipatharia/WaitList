@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/screen"
+    tools:context=".EventsToPush">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+    <View
+        android:id="@id/seperator"
+        style="@style/Divider"
+        android:layout_below="@id/toolbar"></View>
+
+    <TextView
+        style="@style/heading"
+        android:layout_below="@id/seperator"
+        android:id="@id/pustToServer"
+        android:layout_centerHorizontal="true"
+        android:text="@string/push"/>
+
+    <Button
+        android:id="@id/btnPushToServer"
+        style="@style/AppButtonStyleInLists"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/pustToServer"
+        android:text="@string/push"
+        android:onClick="pushToServer"/>
+
+    <ListView
+        android:layout_below="@id/btnPushToServer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/lvEventList"
+        >
+
+    </ListView>
+</RelativeLayout>
